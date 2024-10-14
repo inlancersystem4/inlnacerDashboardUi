@@ -1,0 +1,167 @@
+:root {
+  --shape-radius: 8px;
+  --shadows-0: none;
+  --shadows-1: 0px 2px 1px -1px rgba(145 158 171 / 0.2),
+    0px 1px 1px 0px rgba(145 158 171 / 0.14),
+    0px 1px 3px 0px rgba(145 158 171 / 0.12);
+  --shadows-2: 0px 3px 1px -2px rgba(145 158 171 / 0.2),
+    0px 2px 2px 0px rgba(145 158 171 / 0.14),
+    0px 1px 5px 0px rgba(145 158 171 / 0.12);
+  --shadows-3: 0px 3px 3px -2px rgba(145 158 171 / 0.2),
+    0px 3px 4px 0px rgba(145 158 171 / 0.14),
+    0px 1px 8px 0px rgba(145 158 171 / 0.12);
+  --shadows-4: 0px 2px 4px -1px rgba(145 158 171 / 0.2),
+    0px 4px 5px 0px rgba(145 158 171 / 0.14),
+    0px 1px 10px 0px rgba(145 158 171 / 0.12);
+  --shadows-5: 0px 3px 5px -1px rgba(145 158 171 / 0.2),
+    0px 5px 8px 0px rgba(145 158 171 / 0.14),
+    0px 1px 14px 0px rgba(145 158 171 / 0.12);
+  --shadows-6: 0px 3px 5px -1px rgba(145 158 171 / 0.2),
+    0px 6px 10px 0px rgba(145 158 171 / 0.14),
+    0px 1px 18px 0px rgba(145 158 171 / 0.12);
+  --shadows-7: 0px 4px 5px -2px rgba(145 158 171 / 0.2),
+    0px 7px 10px 1px rgba(145 158 171 / 0.14),
+    0px 2px 16px 1px rgba(145 158 171 / 0.12);
+  --shadows-8: 0px 5px 5px -3px rgba(145 158 171 / 0.2),
+    0px 8px 10px 1px rgba(145 158 171 / 0.14),
+    0px 3px 14px 2px rgba(145 158 171 / 0.12);
+  --shadows-9: 0px 5px 6px -3px rgba(145 158 171 / 0.2),
+    0px 9px 12px 1px rgba(145 158 171 / 0.14),
+    0px 3px 16px 2px rgba(145 158 171 / 0.12);
+  --shadows-10: 0px 6px 6px -3px rgba(145 158 171 / 0.2),
+    0px 10px 14px 1px rgba(145 158 171 / 0.14),
+    0px 4px 18px 3px rgba(145 158 171 / 0.12);
+  --shadows-11: 0px 6px 7px -4px rgba(145 158 171 / 0.2),
+    0px 11px 15px 1px rgba(145 158 171 / 0.14),
+    0px 4px 20px 3px rgba(145 158 171 / 0.12);
+  --shadows-12: 0px 7px 8px -4px rgba(145 158 171 / 0.2),
+    0px 12px 17px 2px rgba(145 158 171 / 0.14),
+    0px 5px 22px 4px rgba(145 158 171 / 0.12);
+  --shadows-13: 0px 7px 8px -4px rgba(145 158 171 / 0.2),
+    0px 13px 19px 2px rgba(145 158 171 / 0.14),
+    0px 5px 24px 4px rgba(145 158 171 / 0.12);
+  --shadows-14: 0px 7px 9px -4px rgba(145 158 171 / 0.2),
+    0px 14px 21px 2px rgba(145 158 171 / 0.14),
+    0px 5px 26px 4px rgba(145 158 171 / 0.12);
+  --shadows-15: 0px 8px 9px -5px rgba(145 158 171 / 0.2),
+    0px 15px 22px 2px rgba(145 158 171 / 0.14),
+    0px 6px 28px 5px rgba(145 158 171 / 0.12);
+  --shadows-16: 0px 8px 10px -5px rgba(145 158 171 / 0.2),
+    0px 16px 24px 2px rgba(145 158 171 / 0.14),
+    0px 6px 30px 5px rgba(145 158 171 / 0.12);
+  --shadows-17: 0px 8px 11px -5px rgba(145 158 171 / 0.2),
+    0px 17px 26px 2px rgba(145 158 171 / 0.14),
+    0px 6px 32px 5px rgba(145 158 171 / 0.12);
+  --shadows-18: 0px 9px 11px -5px rgba(145 158 171 / 0.2),
+    0px 18px 28px 2px rgba(145 158 171 / 0.14),
+    0px 7px 34px 6px rgba(145 158 171 / 0.12);
+  --shadows-19: 0px 9px 12px -6px rgba(145 158 171 / 0.2),
+    0px 19px 29px 2px rgba(145 158 171 / 0.14),
+    0px 7px 36px 6px rgba(145 158 171 / 0.12);
+  --shadows-20: 0px 10px 13px -6px rgba(145 158 171 / 0.2),
+    0px 20px 31px 3px rgba(145 158 171 / 0.14),
+    0px 8px 38px 7px rgba(145 158 171 / 0.12);
+  --shadows-21: 0px 10px 13px -6px rgba(145 158 171 / 0.2),
+    0px 21px 33px 3px rgba(145 158 171 / 0.14),
+    0px 8px 40px 7px rgba(145 158 171 / 0.12);
+  --shadows-22: 0px 10px 14px -6px rgba(145 158 171 / 0.2),
+    0px 22px 35px 3px rgba(145 158 171 / 0.14),
+    0px 8px 42px 7px rgba(145 158 171 / 0.12);
+  --shadows-23: 0px 11px 14px -7px rgba(145 158 171 / 0.2),
+    0px 23px 36px 3px rgba(145 158 171 / 0.14),
+    0px 9px 44px 8px rgba(145 158 171 / 0.12);
+  --shadows-24: 0px 11px 15px -7px rgba(145 158 171 / 0.2),
+    0px 24px 38px 3px rgba(145 158 171 / 0.14),
+    0px 9px 46px 8px rgba(145 158 171 / 0.12);
+  --shadows-z1: 0 1px 2px 0 rgba(145 158 171 / 0.16);
+  --shadows-z4: 0 4px 8px 0 rgba(145 158 171 / 0.16);
+  --shadows-z8: 0 8px 16px 0 rgba(145 158 171 / 0.16);
+  --shadows-z12: 0 12px 24px -4px rgba(145 158 171 / 0.16);
+  --shadows-z16: 0 16px 32px -4px rgba(145 158 171 / 0.16);
+  --shadows-z20: 0 20px 40px -4px rgba(145 158 171 / 0.16);
+  --shadows-z24: 0 24px 48px 0 rgba(145 158 171 / 0.16);
+  --index-mobileStepper: 1000;
+  --index-fab: 1050;
+  --index-speedDial: 1050;
+  --index-appBar: 1100;
+  --index-drawer: 1200;
+  --index-modal: 1300;
+  --index-snackbar: 1400;
+  --index-tooltip: 1500;
+}
+
+:root {
+  --mode: light;
+  --primary-lighter: #c8fad6;
+  --primary-light: #5be49b;
+  --primary-main: #00a76f;
+  --primary-dark: #007867;
+  --primary-darker: #004b50;
+  --primary-contrastText: #ffffff;
+  --secondary-lighter: #efd6ff;
+  --secondary-light: #c684ff;
+  --secondary-main: #8e33ff;
+  --secondary-dark: #5119b7;
+  --secondary-darker: #27097a;
+  --secondary-contrastText: #ffffff;
+  --info-lighter: #cafdf5;
+  --info-light: #61f3f3;
+  --info-main: #00b8d9;
+  --info-dark: #006c9c;
+  --info-darker: #003768;
+  --info-contrastText: #ffffff;
+  --success-lighter: #d3fcd2;
+  --success-light: #77ed8b;
+  --success-main: #22c55e;
+  --success-dark: #118d57;
+  --success-darker: #065e49;
+  --success-contrastText: #ffffff;
+  --warning-lighter: #fff5cc;
+  --warning-light: #ffd666;
+  --warning-main: #ffab00;
+  --warning-dark: #b76e00;
+  --warning-darker: #7a4100;
+  --warning-contrastText: #1c252e;
+  --error-lighter: #ffe9d5;
+  --error-light: #ffac82;
+  --error-main: #ff5630;
+  --error-dark: #b71d18;
+  --error-darker: #7a0916;
+  --error-contrastText: #ffffff;
+  --grey-50: #fcfdfd;
+  --grey-100: #f9fafb;
+  --grey-200: #f4f6f8;
+  --grey-300: #dfe3e8;
+  --grey-400: #c4cdd5;
+  --grey-500: #919eab;
+  --grey-600: #637381;
+  --grey-700: #454f5b;
+  --grey-800: #1c252e;
+  --grey-900: #141a21;
+  --common-black: #000000;
+  --common-white: #ffffff;
+  --common-background: #fff;
+  --common-onBackground: #000;
+  --divider: rgba(145 158 171 / 0.2);
+  --action-hover: rgba(145 158 171 / 0.08);
+  --action-selected: rgba(145 158 171 / 0.16);
+  --action-focus: rgba(145 158 171 / 0.24);
+  --action-disabled: rgba(145 158 171 / 0.8);
+  --action-disabledBackground: rgba(145 158 171 / 0.24);
+  --action-active: #637381;
+  --text-primary: #1c252e;
+  --text-secondary: #637381;
+  --text-disabled: #919eab;
+  --background-paper: #ffffff;
+  --background-default: #ffffff;
+  --background-neutral: #f4f6f8;
+  --alert-errorColor: rgb(102, 68, 52);
+  --alert-infoColor: rgb(38, 97, 97);
+  --alert-successColor: rgb(47, 94, 55);
+  --alert-warningColor: rgb(102, 85, 40);
+  --opacity-inputPlaceholder: 0.42;
+  --opacity-inputUnderline: 0.42;
+  --opacity-switchTrackDisabled: 0.12;
+  --opacity-switchTrack: 0.38;
+  --tooltip-bg: rgba(69, 79, 91, 0.92);
+}

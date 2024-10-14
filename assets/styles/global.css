@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
 :root {
   --shape-radius: 8px;
   --shadows-0: none;
@@ -88,6 +94,7 @@
   --index-modal: 1300;
   --index-snackbar: 1400;
   --index-tooltip: 1500;
+  --header-desktop-height: 72px;
 }
 
 :root {

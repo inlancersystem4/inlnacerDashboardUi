@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-body_default dark:text-white;
+}
+
+main.auth-layout {
+  @apply w-full h-full  flex-col lg:flex-row flex flex-auto min-h-dvh;
+}
+
+main.auth-layout .side-content {
+  @apply w-full lg:flex hidden  flex-col items-center justify-center gap-16 p-6 pt-header_desktop_height bg-[#24282e] max-w-[480px] text-center;
+}
+
+.h3 {
+  @apply text-[32px] leading-[1.50] font-bold;
+}
+
+.h5 {
+  @apply text-[20px] font-bold;
+}
+
+.body1 {
+  @apply text-[16px] leading-[1.50] font-normal;
+}
+
+.body2 {
+  @apply text-[14px] leading-[1.57] font-normal;
+}
+
+.authentication-platform-list {
+  @apply flex gap-4;
+}
+
+.authentication-platform-list .disabled {
+  @apply cursor-not-allowed grayscale;
+}
+
+.authentication-platform-list img {
+  @apply min-w-8 min-h-8 max-w-8 max-h-8;
+}
+
+main.auth-layout .main-content {
+  @apply w-full flex items-center justify-center py-20 px-4;
+}
+
+main.auth-layout .main-content .content-box {
+  @apply w-full flex flex-col max-w-[420px] space-y-10;
+}
+
+main.auth-layout .main-content .content-box .authentication-platform-btn-list {
+  @apply flex items-center justify-center gap-4;
+}
+
+main.auth-layout
+  .main-content
+  .content-box
+  .authentication-platform-btn-list
+  button {
+  @apply min-w-10 min-h-10 max-w-10 max-h-10 flex items-center justify-center;
+}
+
+main.auth-layout
+  .main-content
+  .content-box
+  .authentication-platform-btn-list
+  button:hover,
+main.auth-layout
+  .main-content
+  .content-box
+  .authentication-platform-btn-list
+  button:focus {
+  @apply bg-actions-hover rounded-full;
+}
+
+main.auth-layout .main-content .content-box .divider {
+  @apply font-bold uppercase text-disabled_text text-center border-0  border-solid whitespace-nowrap;
+}
+
+main.auth-layout .main-content .content-box .divider::before {
+  @apply border-dashed w-full  self-center;
+}

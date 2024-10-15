@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="this is Inlancer common Dashboard UI" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="jeet kasundra" />
+
+    <!-- Favicon  -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://inlancer.in/public/inlancer-template/favicon/favicon-96x96.png"
+    />
+
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="Inlancer Dashboard UI" />
+    <meta
+      property="og:description"
+      content="this is Inlancer common Dashboard UI"
+    />
+    <meta
+      property="og:image"
+      content="https://inlancer.in/public/inlancer-template/img/inlancer-meta-image.png"
+    />
+    <meta property="og:url" content="https://inlancer.in" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Inlancer Dashboard UI" />
+    <meta
+      name="twitter:description"
+      content="this is Inlancer common Dashboard UI"
+    />
+    <meta
+      name="twitter:image"
+      content="https://inlancer.in/public/inlancer-template/img/inlancer-meta-image.png"
+    />
+    <meta name="twitter:site" content="@inlanceri" />
+
+    <!-- Theme Toggle  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/expand.min.css"
+    />
+
+    <!-- Import External Stylesheet -->
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Import JavaScript -->
+    <script src="./assets/script/main.js"></script>
+
+    <!-- Tailwindcss CDN || config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/config/tailwind.config"></script>
+
+    <title>Inlancer Dashboard UI</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#">
+        <img
+          src="https://inlancer.in/public/inlancer-template/favicon/favicon-32x32.png"
+          alt="inlnacer logo"
+        />
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="#" class="font-bold text-sm hover:underline">Need help? </a>
+        <button class="drawer-btn">
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+            class="animate-spin"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M14.279 2.152C13.909 2 13.439 2 12.5 2s-1.408 0-1.779.152a2.008 2.008 0 0 0-1.09 1.083c-.094.223-.13.484-.145.863a1.615 1.615 0 0 1-.796 1.353a1.64 1.64 0 0 1-1.579.008c-.338-.178-.583-.276-.825-.308a2.026 2.026 0 0 0-1.49.396c-.318.242-.553.646-1.022 1.453c-.47.807-.704 1.21-.757 1.605c-.07.526.074 1.058.4 1.479c.148.192.357.353.68.555c.477.297.783.803.783 1.361c0 .558-.306 1.064-.782 1.36c-.324.203-.533.364-.682.556a1.99 1.99 0 0 0-.399 1.479c.053.394.287.798.757 1.605c.47.807.704 1.21 1.022 1.453c.424.323.96.465 1.49.396c.242-.032.487-.13.825-.308a1.64 1.64 0 0 1 1.58.008c.486.28.774.795.795 1.353c.015.38.051.64.145.863c.204.49.596.88 1.09 1.083c.37.152.84.152 1.779.152s1.409 0 1.779-.152a2.008 2.008 0 0 0 1.09-1.083c.094-.223.13-.483.145-.863c.02-.558.309-1.074.796-1.353a1.64 1.64 0 0 1 1.579-.008c.338.178.583.276.825.308c.53.07 1.066-.073 1.49-.396c.318-.242.553-.646 1.022-1.453c.47-.807.704-1.21.757-1.605a1.99 1.99 0 0 0-.4-1.479c-.148-.192-.357-.353-.68-.555c-.477-.297-.783-.803-.783-1.361c0-.558.306-1.064.782-1.36c.324-.203.533-.364.682-.556a1.99 1.99 0 0 0 .399-1.479c-.053-.394-.287-.798-.757-1.605c-.47-.807-.704-1.21-1.022-1.453a2.026 2.026 0 0 0-1.49-.396c-.242.032-.487.13-.825.308a1.64 1.64 0 0 1-1.58-.008a1.615 1.615 0 0 1-.795-1.353c-.015-.38-.051-.64-.145-.863a2.007 2.007 0 0 0-1.09-1.083"
+              clip-rule="evenodd"
+              opacity="0.5"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M15.523 12c0 1.657-1.354 3-3.023 3c-1.67 0-3.023-1.343-3.023-3S10.83 9 12.5 9c1.67 0 3.023 1.343 3.023 3"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="auth-layout">
+      <div class="side-content">
+        <div class="space-y-4">
+          <h1 class="h3">Manage the job</h1>
+          <h2 class="body1 text-secondary_text">
+            More effectively with optimized workflows.
+          </h2>
+        </div>
+        <div>
+          <img
+            alt="Dashboard illustration"
+            src="https://assets.minimals.cc/public/assets/illustrations/illustration-dashboard.webp"
+          />
+        </div>
+        <ul class="authentication-platform-list">
+          <li class="disabled">
+            <a aria-label="Jwt" href="#"
+              ><img
+                alt="Jwt"
+                src="https://assets.minimals.cc/public/assets/icons/platforms/ic-jwt.svg"
+            /></a>
+          </li>
+          <li class="disabled">
+            <a aria-label="Firebase" href="#"
+              ><img
+                alt="Firebase"
+                src="https://assets.minimals.cc/public/assets/icons/platforms/ic-firebase.svg"
+            /></a>
+          </li>
+          <li>
+            <a aria-label="Amplify" href="#"
+              ><img
+                alt="Amplify"
+                src="https://assets.minimals.cc/public/assets/icons/platforms/ic-amplify.svg"
+            /></a>
+          </li>
+          <li class="disabled">
+            <a aria-label="Auth0" href="#"
+              ><img
+                alt="Auth0"
+                src="https://assets.minimals.cc/public/assets/icons/platforms/ic-auth0.svg"
+            /></a>
+          </li>
+          <li class="disabled">
+            <a aria-label="Supabase" href="#"
+              ><img
+                alt="Supabase"
+                src="https://assets.minimals.cc/public/assets/icons/platforms/ic-supabase.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <div class="content-box">
+          <div class="space-y-3 text-center">
+            <svg
+              width="90px"
+              height="90px"
+              class="mx-auto"
+              fill="none"
+              viewBox="0 0 96 96"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_di_1870_133886)">
+                <path
+                  fill="var(--warning-light)"
+                  fill-rule="evenodd"
+                  d="M16 20.01v19.82c0 2.618 1.272 5.067 3.463 6.502C26.233 50.768 41.16 60.01 48 60.01s21.767-9.242 28.537-13.678C78.727 44.897 80 42.448 80 39.83V20.01c0-6.628-5.373-12-12-12H28c-6.627 0-12 5.372-12 12zm15 0a3 3 0 000 6h18a3 3 0 000-6H31zm0 14a3 3 0 000 6h30a3 3 0 000-6H31z"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+              <g
+                filter="url(#filter1_i_1870_133886)"
+                style="mix-blend-mode: overlay"
+              >
+                <path
+                  fill="#fff"
+                  fill-opacity="0.04"
+                  fill-rule="evenodd"
+                  d="M16 20.01v19.82c0 2.618 1.272 5.067 3.463 6.502C26.233 50.768 41.16 60.01 48 60.01s21.767-9.242 28.537-13.678C78.727 44.897 80 42.448 80 39.83V20.01c0-6.628-5.373-12-12-12H28c-6.627 0-12 5.372-12 12zm15 0a3 3 0 000 6h18a3 3 0 000-6H31zm0 14a3 3 0 000 6h30a3 3 0 000-6H31z"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+              <path
+                fill="var(--warning-dark)"
+                d="M28 23.01a3 3 0 013-3h18a3 3 0 010 6H31a3 3 0 01-3-3zM28 37.01a3 3 0 013-3h30a3 3 0 010 6H31a3 3 0 01-3-3z"
+              ></path>
+              <path
+                fill="var(--primary-main)"
+                d="M16 25.014a266.095 266.095 0 00-5.284 4.026c-2.408 1.883-3.918 4.66-4.121 7.71C6.317 40.9 6 47.868 6 58.01c0 9.591.568 16.343 1.098 20.558.438 3.476 2.765 6.232 6.196 6.94 5.5 1.136 16.005 2.502 34.706 2.502 18.701 0 29.206-1.366 34.706-2.502 3.431-.708 5.758-3.464 6.196-6.94C89.432 74.353 90 67.601 90 58.01c0-10.142-.317-17.11-.595-21.26-.203-3.05-1.713-5.827-4.12-7.71A266.095 266.095 0 0080 25.014V39.83c0 2.619-1.272 5.067-3.463 6.502C69.767 50.768 54.84 60.01 48 60.01s-21.767-9.242-28.537-13.678C17.273 44.897 16 42.45 16 39.83V25.014z"
+              ></path>
+              <g
+                filter="url(#filter2_i_1870_133886)"
+                style="mix-blend-mode: overlay"
+              >
+                <path
+                  fill="#fff"
+                  fill-opacity="0.04"
+                  d="M16 25.014a266.095 266.095 0 00-5.284 4.026c-2.408 1.883-3.918 4.66-4.121 7.71C6.317 40.9 6 47.868 6 58.01c0 9.591.568 16.343 1.098 20.558.438 3.476 2.765 6.232 6.196 6.94 5.5 1.136 16.005 2.502 34.706 2.502 18.701 0 29.206-1.366 34.706-2.502 3.431-.708 5.758-3.464 6.196-6.94C89.432 74.353 90 67.601 90 58.01c0-10.142-.317-17.11-.595-21.26-.203-3.05-1.713-5.827-4.12-7.71A266.095 266.095 0 0080 25.014V39.83c0 2.619-1.272 5.067-3.463 6.502C69.767 50.768 54.84 60.01 48 60.01s-21.767-9.242-28.537-13.678C17.273 44.897 16 42.45 16 39.83V25.014z"
+                ></path>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_di_1870_133886"
+                  width="80"
+                  height="68"
+                  x="12"
+                  y="4.01"
+                  color-interpolation-filters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    result="hardAlpha"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dx="4" dy="4"></feOffset>
+                  <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                  <feColorMatrix
+                    values="0 0 0 0 0.717647 0 0 0 0 0.431373 0 0 0 0 0 0 0 0 0.16 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_1870_133886"
+                  ></feBlend>
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_1870_133886"
+                    result="shape"
+                  ></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    result="hardAlpha"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dx="-1" dy="-1"></feOffset>
+                  <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    k2="-1"
+                    k3="1"
+                    operator="arithmetic"
+                  ></feComposite>
+                  <feColorMatrix
+                    values="0 0 0 0 0.717647 0 0 0 0 0.431373 0 0 0 0 0 0 0 0 0.48 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    in2="shape"
+                    result="effect2_innerShadow_1870_133886"
+                  ></feBlend>
+                </filter>
+                <filter
+                  id="filter1_i_1870_133886"
+                  width="66"
+                  height="54"
+                  x="14"
+                  y="6.01"
+                  color-interpolation-filters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  ></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    result="hardAlpha"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dx="-2" dy="-2"></feOffset>
+                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    k2="-1"
+                    k3="1"
+                    operator="arithmetic"
+                  ></feComposite>
+                  <feColorMatrix
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    in2="shape"
+                    result="effect1_innerShadow_1870_133886"
+                  ></feBlend>
+                </filter>
+                <filter
+                  id="filter2_i_1870_133886"
+                  width="86"
+                  height="64.996"
+                  x="4"
+                  y="23.014"
+                  color-interpolation-filters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  ></feBlend>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    result="hardAlpha"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dx="-2" dy="-2"></feOffset>
+                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                  <feComposite
+                    in2="hardAlpha"
+                    k2="-1"
+                    k3="1"
+                    operator="arithmetic"
+                  ></feComposite>
+                  <feColorMatrix
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    in2="shape"
+                    result="effect1_innerShadow_1870_133886"
+                  ></feBlend>
+                </filter>
+              </defs>
+            </svg>
+            <h5 class="h5">Please check your email!</h5>
+            <p class="body2 text-secondary_text">
+              We've emailed a 6-digit confirmation code. <br />
+              Please enter the code in the box below to verify your email.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <form>
+              <div class="input-group">
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="exmpale@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="grid grid-cols-6 gap-4">
+                  <input type="text" class="!text-center" placeholder="-" />
+                  <input type="text" class="!text-center" placeholder="-" />
+                  <input type="text" class="!text-center" placeholder="-" />
+                  <input type="text" class="!text-center" placeholder="-" />
+                  <input type="text" class="!text-center" placeholder="-" />
+                  <input type="text" class="!text-center" placeholder="-" />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <button type="submit" class="">verify</button>
+                <p class="text-center text-sm pt-4 pb-2">
+                  Don’t have a code? <a href="#" class="text-primary">Resend</a>
+                </p>
+                <button type="button" class="!bg-transparent !text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    class="mr-2"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64"
+                    ></path>
+                  </svg>
+                  Return to sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

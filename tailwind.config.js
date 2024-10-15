@@ -117,8 +117,14 @@ module.exports = {
         snackbar: "var(--index-snackbar)",
         tooltip: "var(--index-tooltip)",
       },
+      height: {
+        header_desktop_height: "var(--header-desktop-height)",
+      },
       padding: {
         header_desktop_height: "var(--header-desktop-height)",
+      },
+      borderRadius: {
+        shaps: "var(--shape-radius)",
       },
     },
   },

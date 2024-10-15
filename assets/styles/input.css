@@ -82,3 +82,53 @@ main.auth-layout .main-content .content-box .divider {
 main.auth-layout .main-content .content-box .divider::before {
   @apply border-dashed w-full  self-center;
 }
+
+main.auth-layout .main-content .content-box form {
+  @apply w-full space-y-6;
+}
+
+main.auth-layout .main-content .content-box form button {
+  @apply h-12 flex items-center justify-center font-bold text-base rounded-lg bg-white text-gray-800 w-full transition-all;
+}
+
+.input-group {
+  @apply space-y-2 relative;
+}
+
+.input-group input {
+  @apply bg-transparent rounded-shaps border border-solid border-gray-600  transition-colors outline-none py-4 px-3.5 h-auto max-h-[54px] w-full;
+}
+
+.input-group input::placeholder {
+  @apply text-secondary_text text-sm;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+  @apply border-white;
+}
+
+.input-group:hover label,
+.input-group:focus-within label {
+  @apply text-white  transition-colors;
+}
+
+.input-group label {
+  @apply text-secondary_text text-sm ml-3 -mb-2.5 relative z-10 bg-body_default w-fit px-1.5 block cursor-pointer;
+}
+
+.input-group.error label {
+  @apply text-error;
+}
+
+.input-group.error input {
+  @apply border-error;
+}
+
+.main-header {
+  @apply flex items-center justify-between w-full px-6 h-header_desktop_height fixed top-0 left-0;
+}
+
+.main-header .drawer-btn {
+  @apply rounded-full flex items-center justify-center hover:bg-actions-hover focus:bg-actions-hover min-w-8 max-w-8 min-h-8 max-h-8;
+}

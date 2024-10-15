@@ -3,19 +3,25 @@ $(document).ready(function () {
   const currentTheme = localStorage.getItem("theme");
 
   if (currentTheme) {
-    $("html").attr("data-theme", currentTheme);
+    $("html").removeClass("dark light").addClass(currentTheme);
 
     if (currentTheme === "dark") {
       themeToggleBtn.addClass("theme-toggle--toggled");
     }
+  } else {
+    $("html").addClass("light");
   }
 
   themeToggleBtn.on("click", function () {
-    const theme = $("html").attr("data-theme") === "dark" ? "light" : "dark";
+    const isDarkTheme = $("html").hasClass("dark");
 
-    $("html").attr("data-theme", theme);
-
-    localStorage.setItem("theme", theme);
+    if (isDarkTheme) {
+      $("html").removeClass("dark").addClass("light");
+      localStorage.setItem("theme", "light");
+    } else {
+      $("html").removeClass("light").addClass("dark");
+      localStorage.setItem("theme", "dark");
+    }
 
     themeToggleBtn.toggleClass("theme-toggle--toggled");
   });

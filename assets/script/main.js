@@ -9,7 +9,9 @@ $(document).ready(function () {
       themeToggleBtn.addClass("theme-toggle--toggled");
     }
   } else {
-    $("html").addClass("light");
+    $("html").addClass("dark");
+    localStorage.setItem("theme", "dark");
+    themeToggleBtn.addClass("theme-toggle--toggled");
   }
 
   themeToggleBtn.on("click", function () {

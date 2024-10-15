@@ -1012,6 +1012,11 @@ main.auth-layout .main-content .content-box form button {
   display: none;
 }
 
+.layout-sidebar.mini .sidebar-header .sidebar-toggle-btn svg {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .layout-sidebar.mini
   .sidebar-body
   .sidebar-link-group
@@ -1044,6 +1049,9 @@ main.auth-layout .main-content .content-box form button {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: rgba(145,158,171,0.08);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }

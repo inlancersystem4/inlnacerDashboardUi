@@ -856,3 +856,21 @@ main.auth-layout .main-content .content-box form button {
 .main-header .drawer-btn:focus {
   background-color: var(--action-hover);
 }
+
+.auth-layout.center .side-content {
+  display: none;
+}
+
+.auth-layout.center .main-content {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 40 46 / var(--tw-bg-opacity));
+}
+
+.auth-layout.center .main-content .content-box {
+  border-radius: 0.75rem;
+  background-color: var(--background-default);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

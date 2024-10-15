@@ -132,3 +132,15 @@ main.auth-layout .main-content .content-box form button {
 .main-header .drawer-btn {
   @apply rounded-full flex items-center justify-center hover:bg-actions-hover focus:bg-actions-hover min-w-8 max-w-8 min-h-8 max-h-8;
 }
+
+.auth-layout.center .side-content {
+  @apply hidden;
+}
+
+.auth-layout.center .main-content {
+  @apply bg-[#24282e];
+}
+
+.auth-layout.center .main-content .content-box {
+  @apply bg-body_default rounded-xl py-10 px-6;
+}

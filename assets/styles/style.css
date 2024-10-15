@@ -556,6 +556,7 @@ video {
 
 body {
   background-color: var(--background-default);
+  color: var(--common-black);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -873,4 +874,176 @@ main.auth-layout .main-content .content-box form button {
   padding-bottom: 2.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.layout-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.layout-sidebar {
+  display: flex;
+  height: 100dvh;
+  width: 100%;
+  flex-direction: column;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: rgba(145,158,171,0.08);
+}
+
+.layout-sidebar.main {
+  max-width: 18rem;
+}
+
+.layout-sidebar.mini {
+  max-width: 5rem;
+}
+
+.layout-sidebar .sidebar-header {
+  position: relative;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.layout-sidebar .sidebar-header .sidebar-toggle-btn {
+  position: absolute;
+  right: -0.75rem;
+  top: 50%;
+  display: flex;
+  max-height: 1.75rem;
+  min-height: 1.75rem;
+  min-width: 1.75rem;
+  max-width: 1.75rem;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(145,158,171,0.08);
+  background-color: var(--background-default);
+}
+
+.layout-sidebar .sidebar-body {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--shape-radius);
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--grey-600);
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link:hover {
+  background-color: var(--action-hover);
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link svg {
+  margin-right: 0.5rem;
+  display: inline;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link svg path {
+  fill: var(--grey-600);
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link.active {
+  background-color: #00a76f29;
+  color: var(--primary-light);
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group .sidebar-link {
+  max-width: 100%;
+  flex-direction: column;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-size: 10px;
+}
+
+.layout-sidebar.mini
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link
+  div:nth-child(1) {
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group .sidebar-link svg {
+  margin-right: 0px;
+  margin-bottom: 0.25rem;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group p:nth-child(1) {
+  display: none;
+}
+
+.layout-sidebar.mini
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link
+  div:nth-child(2) {
+  display: none;
+}
+
+.layout-sidebar
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link.active
+  svg
+  path {
+  fill: var(--primary-main);
+}
+
+.layout-wrapper .main-layout {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.layout-wrapper .main-layout .layout-header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  height: var(--header-desktop-height);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }

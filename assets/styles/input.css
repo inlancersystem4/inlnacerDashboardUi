@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-body_default dark:text-white;
+  @apply bg-body_default dark:text-white text-black;
 }
 
 main.auth-layout {
@@ -143,4 +143,105 @@ main.auth-layout .main-content .content-box form button {
 
 .auth-layout.center .main-content .content-box {
   @apply bg-body_default rounded-xl py-10 px-6;
+}
+
+.layout-wrapper {
+  @apply w-full h-full flex;
+}
+
+.layout-sidebar {
+  @apply h-dvh border-r border-solid border-[rgba(145,158,171,0.08)]  w-full flex flex-col;
+}
+
+.layout-sidebar.main {
+  @apply max-w-72;
+}
+
+.layout-sidebar.mini {
+  @apply max-w-20;
+}
+
+.layout-sidebar .sidebar-header {
+  @apply pt-5 pl-5 pb-2 relative;
+}
+
+.layout-sidebar .sidebar-header .sidebar-toggle-btn {
+  @apply flex items-center justify-center border border-solid border-[rgba(145,158,171,0.08)] min-w-7 min-h-7 max-w-7 max-h-7 rounded-full absolute -right-3 bg-body_default top-1/2 -translate-y-1/2;
+}
+
+.layout-sidebar .sidebar-body {
+  @apply h-full w-full overflow-y-auto py-2;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group {
+  @apply space-y-1.5 px-3;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link {
+  @apply w-full rounded-shaps cursor-pointer flex items-center justify-between py-2.5 px-3 text-sm font-semibold text-grey-600;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link:hover {
+  @apply bg-actions-hover;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link svg {
+  @apply inline mr-2;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link svg path {
+  @apply fill-grey-600;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link.active {
+  @apply bg-[#00a76f29] text-primary-light;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group {
+  @apply px-1;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group .sidebar-link {
+  @apply max-w-full flex-col text-[10px] py-1.5;
+}
+
+.layout-sidebar.mini
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link
+  div:nth-child(1) {
+  @apply flex-col items-center;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group .sidebar-link svg {
+  @apply mr-0 mb-1;
+}
+
+.layout-sidebar.mini .sidebar-body .sidebar-link-group p:nth-child(1) {
+  @apply hidden;
+}
+
+.layout-sidebar.mini
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link
+  div:nth-child(2) {
+  @apply hidden;
+}
+
+.layout-sidebar
+  .sidebar-body
+  .sidebar-link-group
+  .sidebar-link.active
+  svg
+  path {
+  @apply fill-primary;
+}
+
+.layout-wrapper .main-layout {
+  @apply w-full h-dvh overflow-y-auto relative;
+}
+
+.layout-wrapper .main-layout .layout-header {
+  @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between px-10;
 }

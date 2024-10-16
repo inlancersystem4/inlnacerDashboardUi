@@ -1049,9 +1049,6 @@ main.auth-layout .main-content .content-box form button {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  border-bottom-width: 1px;
-  border-style: solid;
-  border-color: rgba(145,158,171,0.08);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }

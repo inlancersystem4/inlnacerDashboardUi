@@ -80,7 +80,7 @@
               alt="inlnacer logo"
             />
           </a>
-          <button class="sidebar-toggle-btn">
+          <button class="sidebar-toggle-btn" id="sidebarToggleBtn">
             <svg
               width="14px"
               focusable="false"
@@ -531,7 +531,7 @@
             </button>
           </div>
         </header>
-        <section class="px-10 py-header_desktop_height"></section>
+        <section class="px-10 pt-2 pb-header_desktop_height"></section>
       </div>
     </main>
 
@@ -568,7 +568,16 @@
             </button>
           </div>
         </div>
-        <div class="h-full w-full overflow-y-auto"></div>
+        <div class="h-full w-full overflow-y-auto space-y-8">
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="rounded-xl w-full py-5 px-4 space-y-4 border border-solid border-[rgba(145,158,171,0.12)]"
+            >
+              <div class="flex items-center justify-between"></div>
+              <p class="text-xs font-semibold">Dark mode</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

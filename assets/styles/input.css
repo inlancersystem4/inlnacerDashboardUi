@@ -247,7 +247,7 @@ main.auth-layout .main-content .content-box form button {
 }
 
 .layout-wrapper .main-layout .layout-header {
-  @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between px-10 border-b border-solid border-[rgba(145,158,171,0.08)];
+  @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between px-10;
 }
 
 .btn-icon {

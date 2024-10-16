@@ -1,6 +1,7 @@
 $(document).ready(function () {
   const themeToggleBtn = $(".theme-toggle");
   const currentTheme = localStorage.getItem("theme");
+  const sidebarState = localStorage.getItem("sidebarState");
 
   if (currentTheme) {
     $("html").removeClass("dark light").addClass(currentTheme);
@@ -26,6 +27,21 @@ $(document).ready(function () {
     }
 
     themeToggleBtn.toggleClass("theme-toggle--toggled");
+  });
+
+  var $sidebar = $(".layout-sidebar");
+  if (sidebarState) {
+    $sidebar.removeClass("main mini").addClass(sidebarState);
+  }
+
+  $("#sidebarToggleBtn").click(function () {
+    if ($sidebar.hasClass("mini")) {
+      $sidebar.removeClass("mini").addClass("main");
+      localStorage.setItem("sidebarState", "main");
+    } else if ($sidebar.hasClass("main")) {
+      $sidebar.removeClass("main").addClass("mini");
+      localStorage.setItem("sidebarState", "mini");
+    }
   });
 });
 

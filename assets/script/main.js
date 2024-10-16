@@ -66,3 +66,13 @@ function handleDrawer(DrawerId) {
 function closeDrawer(DrawerId) {
   $("#" + DrawerId).removeClass("drawer-show");
 }
+
+function toggleSideBar() {
+  $(".layout-sidebar").removeClass("mini");
+  $(".layout-sidebar").addClass("main !left-0 z-[9999]");
+}
+
+function closeSideBar() {
+  $(".layout-sidebar").removeClass("mini");
+  $(".layout-sidebar").removeClass("main !left-0 z-[9999]");
+}

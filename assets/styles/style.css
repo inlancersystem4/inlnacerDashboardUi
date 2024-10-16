@@ -883,6 +883,9 @@ main.auth-layout .main-content .content-box form button {
 }
 
 .layout-sidebar {
+  position: fixed;
+  top: 0px;
+  left: -999px;
   display: flex;
   height: 100dvh;
   width: 100%;
@@ -890,6 +893,15 @@ main.auth-layout .main-content .content-box form button {
   border-right-width: 1px;
   border-style: solid;
   border-color: rgba(145,158,171,0.08);
+  background-color: var(--background-default);
+}
+
+@media (min-width: 1024px) {
+  .layout-sidebar {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 
 .layout-sidebar.main {
@@ -902,6 +914,9 @@ main.auth-layout .main-content .content-box form button {
 
 .layout-sidebar .sidebar-header {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 1.25rem;
   padding-left: 1.25rem;
   padding-bottom: 0.5rem;
@@ -911,7 +926,7 @@ main.auth-layout .main-content .content-box form button {
   position: absolute;
   right: -0.75rem;
   top: 50%;
-  display: flex;
+  display: none;
   max-height: 1.75rem;
   min-height: 1.75rem;
   min-width: 1.75rem;
@@ -925,6 +940,12 @@ main.auth-layout .main-content .content-box form button {
   border-style: solid;
   border-color: rgba(145,158,171,0.08);
   background-color: var(--background-default);
+}
+
+@media (min-width: 1024px) {
+  .layout-sidebar .sidebar-header .sidebar-toggle-btn {
+    display: flex;
+  }
 }
 
 .layout-sidebar .sidebar-body {
@@ -1049,8 +1070,22 @@ main.auth-layout .main-content .content-box form button {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .layout-wrapper .main-layout .layout-header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout-wrapper .main-layout .layout-header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .btn-icon {
@@ -1192,4 +1227,19 @@ main.auth-layout .main-content .content-box form button {
 
 .notifaction-list li:hover {
   background-color: var(--action-hover);
+}
+
+.avatar {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.avatar img {
+  position: absolute;
+  inset: 0px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

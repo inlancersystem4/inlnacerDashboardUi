@@ -150,7 +150,7 @@ main.auth-layout .main-content .content-box form button {
 }
 
 .layout-sidebar {
-  @apply h-dvh border-r border-solid border-[rgba(145,158,171,0.08)]  w-full flex flex-col;
+  @apply h-dvh border-r border-solid border-[rgba(145,158,171,0.08)]  w-full flex flex-col fixed top-0 -left-[999px] bg-body_default lg:relative lg:top-auto lg:left-auto;
 }
 
 .layout-sidebar.main {
@@ -162,11 +162,11 @@ main.auth-layout .main-content .content-box form button {
 }
 
 .layout-sidebar .sidebar-header {
-  @apply pt-5 pl-5 pb-2 relative;
+  @apply pt-5 pl-5 pb-2 relative flex items-center justify-between;
 }
 
 .layout-sidebar .sidebar-header .sidebar-toggle-btn {
-  @apply flex items-center justify-center border border-solid border-[rgba(145,158,171,0.08)] min-w-7 min-h-7 max-w-7 max-h-7 rounded-full absolute -right-3 bg-body_default top-1/2 -translate-y-1/2;
+  @apply lg:flex hidden items-center justify-center border border-solid border-[rgba(145,158,171,0.08)] min-w-7 min-h-7 max-w-7 max-h-7 rounded-full absolute -right-3 bg-body_default top-1/2 -translate-y-1/2;
 }
 
 .layout-sidebar .sidebar-body {
@@ -247,7 +247,7 @@ main.auth-layout .main-content .content-box form button {
 }
 
 .layout-wrapper .main-layout .layout-header {
-  @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between px-10;
+  @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between lg:px-10 sm:px-6 px-3;
 }
 
 .btn-icon {
@@ -328,4 +328,12 @@ main.auth-layout .main-content .content-box form button {
 
 .notifaction-list li {
   @apply px-3.5 py-4 flex items-start gap-3 hover:bg-actions-hover;
+}
+
+.avatar {
+  @apply relative rounded-full overflow-hidden;
+}
+
+.avatar img {
+  @apply absolute inset-0 w-full h-full object-cover;
 }

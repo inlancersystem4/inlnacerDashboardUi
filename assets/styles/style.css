@@ -1055,3 +1055,98 @@ main.auth-layout .main-content .content-box form button {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+
+.btn-icon {
+  display: flex;
+  max-height: 2.25rem;
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+  max-width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.btn-icon:hover {
+  background-color: var(--action-hover);
+}
+
+.dropdown-parent {
+  position: relative;
+}
+
+.dropdown-parent .dropdown {
+  position: absolute;
+  display: none;
+  min-width: 13rem;
+  overflow: hidden;
+  border-radius: var(--shape-radius);
+  background-color: var(--grey-800);
+  padding: 0.25rem;
+  --tw-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.24) -20px 20px 40px -4px;
+}
+
+.dropdown-parent .dropdown.bottom-end {
+  top: 100%;
+  right: 0px;
+  margin-top: 0.25rem;
+}
+
+.dropdown-parent .dropdown.bottom-start {
+  top: 100%;
+  left: 0px;
+  margin-top: 0.25rem;
+}
+
+.dropdown-parent.active .dropdown {
+  display: block !important;
+  animation: fadeIn 0.2s ease-out;
+  -webkit-animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0px;
+  right: -9999px;
+  z-index: var(--index-drawer);
+  height: 100dvh;
+  width: 100%;
+  max-width: 24rem;
+  background-color: rgba(var(--background-default-channel) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  --tw-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.drawer.drawer-show {
+  right: 0px;
+  animation: slideInRight 0.5s ease-out;
+  -webkit-animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

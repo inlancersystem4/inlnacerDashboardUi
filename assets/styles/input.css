@@ -249,3 +249,61 @@ main.auth-layout .main-content .content-box form button {
 .layout-wrapper .main-layout .layout-header {
   @apply w-full  top-0  h-header_desktop_height sticky flex items-center justify-between px-10 border-b border-solid border-[rgba(145,158,171,0.08)];
 }
+
+.btn-icon {
+  @apply rounded-full flex items-center justify-center min-w-9 min-h-9 max-w-9 max-h-9 hover:bg-actions-hover;
+}
+
+.dropdown-parent {
+  @apply relative;
+}
+
+.dropdown-parent .dropdown {
+  @apply p-1 min-w-52 bg-grey-800 rounded-shaps backdrop-blur-xl absolute hidden overflow-hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.24) -20px 20px 40px -4px;
+}
+
+.dropdown-parent .dropdown.bottom-end {
+  @apply top-full right-0 mt-1;
+}
+
+.dropdown-parent .dropdown.bottom-start {
+  @apply top-full left-0 mt-1;
+}
+
+.dropdown-parent.active .dropdown {
+  @apply !block;
+  animation: fadeIn 0.2s ease-out;
+  -webkit-animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.drawer {
+  @apply fixed top-0 -right-[9999px]  h-dvh z-drawer bg-body_default_channel bg-opacity-50 backdrop-blur-xl w-full max-w-96;
+}
+
+.drawer.drawer-show {
+  @apply right-0;
+  animation: slideInRight 0.5s ease-out;
+  -webkit-animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

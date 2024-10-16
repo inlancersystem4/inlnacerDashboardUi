@@ -171,6 +171,7 @@
     --opacity-switchTrackDisabled: 0.12;
     --opacity-switchTrack: 0.38;
     --tooltip-bg: rgba(69, 79, 91, 0.92);
+    --background-default-channel: 225 225 225;
   }
 
   .dark {
@@ -244,6 +245,7 @@
     --opacity-inputUnderline: 0.7;
     --opacity-switchTrackDisabled: 0.2;
     --opacity-switchTrack: 0.3;
+    --background-default-channel: 20 26 33;
   }
 }
 

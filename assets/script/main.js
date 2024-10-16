@@ -28,3 +28,25 @@ $(document).ready(function () {
     themeToggleBtn.toggleClass("theme-toggle--toggled");
   });
 });
+
+function handleDropDown(dropdownId) {
+  $(".dropdown-parent").removeClass("active");
+  $("#" + dropdownId).toggleClass("active");
+}
+
+$(document).on("click", function (e) {
+  if (
+    !$(e.target).closest(".dropdown-parent").length &&
+    !$(e.target).hasClass("dropdown-link")
+  ) {
+    $(".dropdown-parent").removeClass("active");
+  }
+});
+
+function handleDrawer(DrawerId) {
+  $("#" + DrawerId).addClass("drawer-show");
+}
+
+function closeDrawer(DrawerId) {
+  $("#" + DrawerId).removeClass("drawer-show");
+}

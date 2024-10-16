@@ -1147,3 +1147,49 @@ main.auth-layout .main-content .content-box form button {
     transform: translateX(0);
   }
 }
+
+.preset-icon {
+  display: inline-flex;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: currentColor;
+  color: currentColor;
+  -webkit-mask: url("https://assets.minimals.cc/public/assets/icons/settings/ic-siderbar-duotone.svg")
+    center center / contain no-repeat;
+          mask: url("https://assets.minimals.cc/public/assets/icons/settings/ic-siderbar-duotone.svg")
+    center center / contain no-repeat;
+}
+
+.notifaction-list > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  border-style: dashed;
+  border-color: rgba(145,158,171,0.2);
+}
+
+.notifaction-list li:nth-child(1) {
+  border-top-width: 1px;
+  border-style: dashed;
+  border-color: rgba(145,158,171,0.2);
+}
+
+.notifaction-list:last-child {
+  border-bottom-width: 1px;
+  border-style: dashed;
+  border-color: rgba(145,158,171,0.2);
+}
+
+.notifaction-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.notifaction-list li:hover {
+  background-color: var(--action-hover);
+}

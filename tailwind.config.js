@@ -70,6 +70,7 @@ module.exports = {
         secondary_text: "var(--text-secondary)",
         body_default: "var(--background-default)",
         disabled_text: "var(--text-disabled)",
+        neutral: "var(--background-neutral)",
         body_default_channel:
           "rgba(var(--background-default-channel) / <alpha-value>)",
         black: "var(--common-black)",

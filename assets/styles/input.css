@@ -307,3 +307,25 @@ main.auth-layout .main-content .content-box form button {
     transform: translateX(0);
   }
 }
+
+.preset-icon {
+  @apply w-7 h-7 inline-flex bg-current text-current;
+  mask: url("https://assets.minimals.cc/public/assets/icons/settings/ic-siderbar-duotone.svg")
+    center center / contain no-repeat;
+}
+
+.notifaction-list {
+  @apply divide-y divide-dashed divide-[rgba(145,158,171,0.2)];
+}
+
+.notifaction-list li:nth-child(1) {
+  @apply border-t border-dashed border-[rgba(145,158,171,0.2)];
+}
+
+.notifaction-list:last-child {
+  @apply border-b border-dashed border-[rgba(145,158,171,0.2)];
+}
+
+.notifaction-list li {
+  @apply px-3.5 py-4 flex items-start gap-3 hover:bg-actions-hover;
+}

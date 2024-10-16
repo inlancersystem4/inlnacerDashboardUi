@@ -76,3 +76,14 @@ function closeSideBar() {
   $(".layout-sidebar").removeClass("mini");
   $(".layout-sidebar").removeClass("main !left-0 z-[9999]");
 }
+
+$(document).ready(function () {
+  $(".sidebar-link").on("click", function (e) {
+    e.preventDefault();
+    var subLinks = $(this).next(".sub-links");
+    if (subLinks.length) {
+      subLinks.slideToggle();
+      $(this).toggleClass("active");
+    }
+  });
+});

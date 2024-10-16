@@ -988,6 +988,47 @@ main.auth-layout .main-content .content-box form button {
   background-color: var(--action-hover);
 }
 
+.layout-sidebar .sidebar-body .sub-links {
+  margin-left: 1.5rem;
+  display: none;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: rgba(145,158,171,0.2);
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link svg:nth-child(2) {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.layout-sidebar .sidebar-body .sidebar-link.active svg:nth-child(2) {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.layout-sidebar .sidebar-body .sub-links li {
+  position: relative;
+}
+
+.layout-sidebar .sidebar-body .sub-links li::before {
+  left: 0px;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(145, 158, 171, 0.2);
+  -webkit-mask: url('data:image/svg+xml,%3Csvgxmlns="http://www.w3.org/2000/svg"width="14"height="14"fill="none"viewBox="0 0 14 14"%3E%3Cpathd="M1 1v4a8 8 0 0 0 8 8h4"stroke="%23efefef"stroke-width="2"stroke-linecap="round"/%3E%3C/svg%3E')
+    50% 50% / 100% no-repeat;
+          mask: url('data:image/svg+xml,%3Csvgxmlns="http://www.w3.org/2000/svg"width="14"height="14"fill="none"viewBox="0 0 14 14"%3E%3Cpathd="M1 1v4a8 8 0 0 0 8 8h4"stroke="%23efefef"stroke-width="2"stroke-linecap="round"/%3E%3C/svg%3E')
+    50% 50% / 100% no-repeat;
+  transform: translate(calc(12px * -1), calc(12px * -0.4));
+}
+
 .layout-sidebar .sidebar-body .sidebar-link-group .sidebar-link svg {
   margin-right: 0.5rem;
   display: inline;

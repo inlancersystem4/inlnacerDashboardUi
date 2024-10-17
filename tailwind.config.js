@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -73,8 +74,6 @@ module.exports = {
         neutral: "var(--background-neutral)",
         body_default_channel:
           "rgba(var(--background-default-channel) / <alpha-value>)",
-        black: "var(--common-black)",
-        white: "var(--common-white)",
       },
       boxShadow: {
         0: "var(--shadows-0)",

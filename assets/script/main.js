@@ -1,35 +1,31 @@
 $(document).ready(function () {
-  const themeToggleBtn = $(".theme-toggle");
+  const themeToggleCheckbox = $("#theme-toggle-checkbox");
   const currentTheme = localStorage.getItem("theme");
-  const sidebarState = localStorage.getItem("sidebarState");
+  const prefersDarkScheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
 
-  if (currentTheme) {
-    $("html").removeClass("dark light").addClass(currentTheme);
-
-    if (currentTheme === "dark") {
-      themeToggleBtn.addClass("theme-toggle--toggled");
-    }
-  } else {
+  if (currentTheme === "dark" || (!currentTheme && prefersDarkScheme)) {
     $("html").addClass("dark");
-    localStorage.setItem("theme", "dark");
-    themeToggleBtn.addClass("theme-toggle--toggled");
+    themeToggleCheckbox.prop("checked", true);
+  } else {
+    $("html").removeClass("dark");
+    themeToggleCheckbox.prop("checked", false);
   }
 
-  themeToggleBtn.on("click", function () {
-    const isDarkTheme = $("html").hasClass("dark");
-
-    if (isDarkTheme) {
+  themeToggleCheckbox.on("change", function () {
+    if ($(this).is(":checked")) {
+      $("html").addClass("dark").removeClass("light");
+      localStorage.setItem("theme", "dark");
+    } else {
       $("html").removeClass("dark").addClass("light");
       localStorage.setItem("theme", "light");
-    } else {
-      $("html").removeClass("light").addClass("dark");
-      localStorage.setItem("theme", "dark");
     }
-
-    themeToggleBtn.toggleClass("theme-toggle--toggled");
   });
 
   var $sidebar = $(".layout-sidebar");
+  const sidebarState = localStorage.getItem("sidebarState");
+
   if (sidebarState) {
     $sidebar.removeClass("main mini").addClass(sidebarState);
   }
